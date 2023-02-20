@@ -7,7 +7,7 @@
 						<div class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2">
 							<div class="hb-sectionhead mb-50">
 								<div class="hb-sectiontitle">
-									<h2><span>Santa Armonía</span>
+									<h2><span><?= $content['c_brand'] ?></span>
 										Dárkové poukazy
 									</h2>
 								</div>

@@ -39,7 +39,6 @@ $services = Db::queryAll('SELECT * FROM `services` WHERE `order_id` = ?', array(
 <!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->	<html class="no-js" lang="cs"> <!--<![endif]-->
 <head>
-	<base href="/">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="<?= $content['meta_description']?>">
@@ -445,10 +444,10 @@ $services = Db::queryAll('SELECT * FROM `services` WHERE `order_id` = ?', array(
 		</div>
 	</div>
 
-	<?php if($features) : ?>
+	<?php if($features && empty($_GET['page'])) : ?>
 	<div class="modal">
 		<div class="events">
-			<div>
+			<div class="text-center">
 				<h2><?= $content['feat_headline'] ?></h2>
 				<p class="subheadline text-center">
 				<?= $content['feat_subheadline'] ?>

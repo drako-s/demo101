@@ -12,12 +12,12 @@
 						<div class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2">
 							<div class="hb-sectionhead mb-50">
 								<div class="hb-sectiontitle">
-									<h2><span>Santa Armonía</span>
+									<h2><span><?= $content['c_brand'] ?></span>
 										Rezervace
 									</h2>
 								</div>
 								<div class="hb-headcontent">
-									<h2>+420 603 376 598</h2>
+									<h2><?= $content['c_phone'] ?></h2>
 									<div class="hb-description">
 										<p>Rezervaci vyřídíte jednoduše telefonicky. Pokud se nedovoláte, nezoufejte. Asi se věnuji jinému klientovi, ale určitě zavolám zpět.</p>
 									</div>
@@ -35,10 +35,10 @@
 								</div>
 								<div class="col-xs-12 col-sm-4 col-md-4">
 									<div class="hb-address">
-										<h2>Santa Armonía</h2>
+										<h2><?= $content['c_brand'] ?></h2>
 										<div class="hb-addressbox">
-											<p>Štefánikova 361, 735 81 Bohumín
-											<span>masazebohumin@seznam.cz</span>
+											<p><?= $content['c_address'] ?>
+											<span><?= $content['c_email'] ?></span>
                                             <br/>
 											
                                             </p>
@@ -49,7 +49,7 @@
 							</div>
 							<div class="hb-contactus-formarea">											
                             <div class="col-12">
-                                <a href="tel:00420603376598" class="hb-btn changebtn decoration-none">+420 603 376 598</a>
+                                <a href="tel:<?= $content['c_phone'] ?>" class="hb-btn changebtn decoration-none"><?= $content['c_phone'] ?></a>
 								</div>
 							</div>
 						</div>
